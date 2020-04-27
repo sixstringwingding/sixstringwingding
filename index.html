@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/84257b5221.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>SixStringWingDing</title>
+  </head>
+
+  <body>
+    <header class="hero">
+      <nav id="navbar" class="navbar">
+        <a href="#" class="navbar-brand"
+          ><img src="images/logo.png" alt="logo"
+        /></a>
+        <ul class="list-items">
+          <li class="list-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h1>Isaac Lamson</h1>
+        <h2>Web Developer and Musician</h2>
+        <button class="btn">View My Portfolio</button>
+      </div>
+    </header>
+    <section id="about">
+      <div class="about-heading">
+        <h1>Capturing Your Audience</h1>
+        <div class="bottom-line"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          consequatur.
+        </p>
+      </div>
+      <div class="about-content">
+        <div>
+          <h3>Building Your Vision</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+            rem, commodi id deleniti asperiores quas odio dignissimos quia a
+            sint!
+          </p>
+        </div>
+        <div>
+          <h3>Creating Your Presence</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+            rem, commodi id deleniti asperiores quas odio dignissimos quia a
+            sint!
+          </p>
+        </div>
+        <div>
+          <h3>Standing Out From The Crowd</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+            rem, commodi id deleniti asperiores quas odio dignissimos quia a
+            sint!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iure?
+      </p>
+    </footer>
+
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById('navbar').style.top = '0';
+        } else {
+          document.getElementById('navbar').style.top = '-300px';
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+  </body>
+</html>
